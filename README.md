@@ -1,7 +1,7 @@
 
 # Semplice RESTfull Web Service 
 
-_Implementazione di un semplice REST API Server in PHP
+_Implementazione di un semplice RESTfull Web Service in PHP_
 
 ## Installazione
 
