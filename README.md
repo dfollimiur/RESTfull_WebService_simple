@@ -42,7 +42,9 @@ Payload:
 // delete an existing record
 DELETE /person/{id}
 
+Swagger documentation: https://app.swaggerhub.com/apis-docs/DANILOFOLLI/RESTfull_WebService_simple/1.0.0
 
+## Note:
 Per avviare il server lanciare dalla cartella del progetto il comando
 ```
 php -S 127.0.0.1:8000 -t public
