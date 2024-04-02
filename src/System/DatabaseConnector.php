@@ -6,7 +6,10 @@ class DatabaseConnector {
 
     public function __construct()
     {
-        require_once(__DIR__ . '\..\config.php');
+        if (file_exists(__DIR__ . '/../config.php'))
+            require_once(__DIR__ . '/../config.php');
+        else
+            exit('DB configuration file missing');
 
         try {
             $this->dbConnection = new \PDO(

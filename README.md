@@ -9,7 +9,7 @@ _Implementazione di un semplice RESTfull Web Service in PHP_
 Accedere al db e lanciare lo script sql presente nella cartella migrations per la creazione del db
 
 2. **Variabili del programma**
-Copiare il file .env.example nel file .env quindi aprirlo e valorizzare i parametri di connessione al DB
+Copiare il file config.php.example nel file config.php quindi aprirlo e valorizzare i parametri di connessione al DB
 
 ## Endpoint implementati:
 
