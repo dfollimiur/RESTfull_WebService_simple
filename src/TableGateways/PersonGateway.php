@@ -64,7 +64,8 @@ class PersonGateway {
                 'firstparent_id' => isset($input['firstparent_id']) ? $input['firstparent_id'] : null,
                 'secondparent_id' => isset($input['secondparent_id']) ? $input['secondparent_id'] : null,
             ));
-            return $statement->rowCount();
+            return $this->db->lastInsertId();
+            // return $statement->rowCount();
         } catch (\PDOException $e) {
             exit($e->getMessage());
         }    

@@ -72,9 +72,9 @@ class PersonController {
         if (! $this->validatePerson($input)) {
             return $this->unprocessableEntityResponse();
         }
-        $this->personGateway->insert($input);
+        $id = $this->personGateway->insert($input);
         $response['status_code_header'] = 'HTTP/1.1 201 Created';
-        $response['body'] = null;
+        $response['body'] = $id;
         return $response;
     }
 
